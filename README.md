@@ -1,6 +1,6 @@
 # 🚀 Ejercicios JavaScript
 
-Este repositorio contiene una colección de ejercicios y proyectos pequeños en **JavaScript**, enfocados en la práctica y aprendizaje de la programación en este lenguaje. 💻✨
+Hola, soy Mejias99! Este repositorio contiene una colección de ejercicios y proyectos pequeños en **JavaScript**, enfocados en la práctica y aprendizaje de la programación en este lenguaje. 💻✨
 
 ## 📥 Instalación
 
