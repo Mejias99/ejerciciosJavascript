@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición de la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Meta tag para hacer la página responsive y adaptarla a dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag para indicar el autor -->
+    <meta name="author" content="Jose Mejias">
+    <!-- Meta tag para indicar la descripción -->
+    <meta name="description" content="Ejercicio FizzBuzz en Javascript">
+
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>FizzBuzz by Mejias</title>
+
+    <!-- Vinculación a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="./SketchyBootstrap.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5">
+        
+        <!-- Título principal centrado y estilizado -->
+        <h1 class="text-center text-primary mb-4">Fizz Buzz!</h1>
+        <!-- Contenedor donde se mostrarán los resultados. Se ha añadido estilo para que tenga máx 400px altura y se permita el desplazamiento si el contenido excede esa altura -->
+        <div id="resultado" class="p-4 border rounded bg-white shadow-sm" style="max-height: 400px; overflow-y: auto;"></div>
+
+    </div>
+
+    <script>
+        // Se declara la variable salida que acumula los resultados que se mostrarán en la página
+        let salida="";
+
+        // Se itera del 1 al 100
+        for (let i=1; i<101; i++) {
+
+            // Si el número es divisible tanto por 3 como por 5, se agrega "FizzBuzz" 
+            if (i%3==0 && i%5==0){
+                salida += "FizzBuzz<br>";
+            } 
+            // Si el número es solo divisible por 3, se agrega "Fizz"
+            else if (i%3==0) {
+                salida += "Fizz<br>";
+            } 
+            // Si el número es solo divisible por 5, se agrega "Buzz"
+            else if (i%5==0) {
+                salida += "Buzz<br>";
+            } 
+            // Si no es divisible ni por 3 ni por 5, se muestra el número
+            else {
+                salida += i + "<br>";
+            }
+
+        }
+        // Inserta el contenido generado en el contenedor con el id "resultado"
+        document.getElementById("resultado").innerHTML = salida;
+    </script>
+    
+    <!-- Inclusión de JS de Bootstrap (necesario para algunos componentes) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
